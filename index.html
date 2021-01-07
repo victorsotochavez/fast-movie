@@ -1,0 +1,668 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>MovieHunter</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+<script type="text/javascript" src="js/mh.js"></script>
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/jquery-func.js"></script>
+
+<!--[if IE 6]><link rel="stylesheet" href="css/ie6.css" type="text/css" media="all" /><![endif]-->
+</head>
+<body id="vm">
+<!-- START PAGE SOURCE -->
+<div id="shell">
+
+  <div id="header">
+
+    <h1 >MOVIES</h1>
+    <div class="usu"> <span>.</span>
+      <ul>
+        <li><a  onclick="vfd('formses')">REGISTRARSE</a></li>
+        <li><a  onclick="vfd('formdat')">INICIAR SESION</a></li>
+        
+      </ul>
+    </div>
+
+   
+
+     <div id="formdat" >
+      <p>................................................................................................................................................................................................................................................................................................................................................................................................<button class="bre" value="X" onclick="cerravfd('formdat')">X</button></p>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+  <form   class="fcd">
+    <label for="fname">USUARIO</label>
+    <input type="text" id="fname" name="firstname" placeholder="">
+
+    <label for="lname">PASSWORD</label>
+    <input type="password" id="lname" name="lastname" placeholder="">
+  
+    <input type="submit" value="Ingresar">
+  </form>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <p>........................................................................................................................................................................................................................................................................................................................................................................................................</p>
+</div>
+
+
+<div id="formses" >
+      <p>................................................................................................................................................................................................................................................................................................................................................................................................<button class="bre" value="X" onclick="cerravfd('formses')">X</button></p>
+      <br>
+      
+
+  <form   class="fcd">
+
+    <label for="fname">NOMBRE</label>
+    <input type="text" id="fname" name="nombre" placeholder="">
+
+    <label for="lname">APELLIDO</label>
+    <input type="text" id="lname" name="apellido" placeholder="">
+
+    <label for="lname">CORREO</label>
+    <input type="text" id="lname" name="apellido" placeholder="">
+
+    <label for="fname">USUARIO</label>
+    <input type="text" id="fname" name="usuario" placeholder="">
+
+    <label for="lname">PASSWORD</label>
+    <input type="password" id="lname" name="password" placeholder="">
+
+    <label for="lname">CONFIRMAR PASSWORD</label>
+    <input type="password" id="lname" name="c_password" placeholder="">
+  
+    <input type="submit" value="Ingresar">
+  </form>
+  <br>
+  
+  <p>........................................................................................................................................................................................................................................................................................................................................................................................................</p>
+</div>
+
+
+   <br>
+   <br>
+
+    <div id="sub-navigation">
+       
+       <div id="search">
+        
+        <form  id="formu1" method="post" accept-charset="utf-8">
+          
+          <label for="search-field">BUSCAR</label>
+          <input type="text" name="search field"  id="search-field" class="blink search-field"  />
+          <!--
+          <input type="submit" value="GO!" class="search-button" onclick="pelic()"/>
+           -->
+        </form>
+
+
+        
+
+        <button class="search-button" onclick="peli()">GO</button>
+        
+
+      </div>
+       
+      
+      <br>
+      <br>
+      <br>
+
+
+      <div class="rex" >
+      <ul>
+        <li><a onClick="window.location.reload();">HOME</a></li>
+        <li><a onclick="nuev()">NUEVO</a></li>
+        <li><a onclick="recom()">MAS RECOMENDADO</a></li>
+        <li><a onclick="vist()">MAS VISTOS</a></li>
+        <li class="xds"><a href="#"  class="xds2">GENERO</a>
+       
+        <div class="xds3">
+        <a onclick="accion()" >ACCION</a>
+        <a onclick="terror()" >TERROR</a>
+        <a onclick="comedia()" >COMEDIA</a>
+        <a onclick="drama()" >DRAMA</a>
+        <a onclick="romance()" >ROMANCE</a>
+        <a onclick="ciefic()" >CIENCIA FICCION</a>
+        <a onclick="guerra()" >GUERRA</a>
+        <a onclick="thriller()" >THRILLER</a>
+        <a onclick="animacion()" >ANIMACION</a>
+        </div>
+          
+        </li>
+        <!--
+        <li><a href="#">ACTOR</a></li>
+        <li><a href="#">DIRECTOR</a></li>
+        <li><a href="#">PRODUCTOR</a></li>
+        <li><a href="#">PAIS</a></li>
+        <li><a href="#">AÑO</a></li>
+        <li><a href="#">FORMA</a></li>
+        <li><a href="#">IDIOMA</a></li>
+      -->
+      </ul>
+    </div>
+      
+
+    </div >
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  </div >
+
+  <div id="main">
+    <div id="content">
+      <div class="box">
+        
+
+        <div class="movie" id="we are who we are">
+
+          <div class="movie-image"> 
+            <img  src="css/images/m1.jpg"  alt="WE ARE WHO ARE" /> 
+          <button class="btnx" onclick="fs('pauvi1','myModal1','img1',0)">T</button>
+          </div>
+
+          <div id="myModal1" class="modal">
+             <span class="close">&times;</span>
+               <video  id="pauvi1" class="modal-m2"  controls>
+                 <source  src="css/images/luca.mp4" id="img1" >
+               </video>
+               <div class="caption">NOMBRE: We Are Who We Are <br><br> DIRECTOR:Luca Guadagnino
+                <br><br>          GENERO:Drama,Comedia,Juvenil,Adolescente
+            <br><br>ACTORES: Jack drezle, Ryona Saxrdi<br><br>DURACION: 1h,58m</div>
+        </div>
+
+        
+
+        <div class="foridi">
+          <button class="btnf" onclick="ocultt()">ESP</button>
+          <button class="btnf" >ENG</button>
+          <button class="btnf" onclick="fs('pauvi1m',
+          'myModal1m','img1m',1)">LAT</button>
+          <button class="btnf" >S</button>
+        </div>
+
+         
+
+         <div id="myModal1m" class="modal2mov">
+             <span class="close">&times;</span>
+               <video  id="pauvi1m" class="modal-m2"  controls>
+                 <source  src="css/images/y2mate.com - Stanley Kubrick's Barry Lyndon (New Trailer 2016) - In cinemas 29 July _ BFI release_1080p.mp4" id="img1m" >
+               </video>
+               <div class="caption2mov">
+                 <button class="btnf" id="meg" onclick="mg()">ME GUSTA</button>
+                <button class="btnf" id="nomeg" onclick="nmg()" >NO ME GUSTA</button>
+               </div>
+        </div>
+
+         
+         
+
+
+        </div>
+
+
+        <div class="movie" id="too old to die young">
+
+          <div class="movie-image"> 
+            <img  src="css/images/m2.jpg"  alt="WE ARE WHO ARE" /> 
+          <button class="btnx" onclick="fs('pauvi2','myModal2','img2',2)">T</button>
+          </div>
+
+          <div id="myModal2" class="modal">
+             <span class="close">&times;</span>
+               <video  id="pauvi2" class="modal-m2"  controls>
+                 <source  src="css/images/Too-Old-to-Die-Young-T.mp4" id="img2" >
+               </video>
+        </div>
+        
+        <div class="foridi">
+          <button class="btnf" >ESP</button>
+          <button class="btnf" >ENG</button>
+          <button class="btnf" >LAT</button>
+          <button class="btnf" >S</button>
+        </div>
+
+          
+          
+
+
+
+
+
+        </div>
+
+
+        
+
+
+        <div class="movie" id="borat 2">
+
+          <div class="movie-image"> 
+            <img  src="css/images/m3.jpg"  alt="WE ARE WHO ARE" /> 
+          <button class="btnx" onclick="fs('pauvi3','myModal3','img3',3)">T</button>
+          </div>
+
+          <div id="myModal3" class="modal">
+             <span class="close">&times;</span>
+               <video  id="pauvi3" class="modal-m2"  controls>
+                 <source  src="css/images/Borat2-T.mp4" id="img3" >
+               </video>
+        </div>
+        
+        <div class="foridi">
+          <button class="btnf" >ESP</button>
+          <button class="btnf" >ENG</button>
+          <button class="btnf" >LAT</button>
+          <button class="btnf" >S</button>
+        </div>
+
+        </div>
+
+
+        <div class="movie" id="enemy">
+
+          <div class="movie-image"> 
+            <img  src="css/images/m4.jpg"  alt="WE ARE WHO ARE" /> 
+          <button class="btnx" onclick="fs('pauvi4','myModal4','img4',4)">T</button>
+          </div>
+
+          <div id="myModal4" class="modal">
+             <span class="close">&times;</span>
+               <video  id="pauvi4" class="modal-m2"  controls>
+                 <source  src="css/images/Enemy-T.mp4" id="img4" >
+               </video>
+        </div>
+        
+        <div class="foridi">
+          <button class="btnf" >ESP</button>
+          <button class="btnf" >ENG</button>
+          <button class="btnf" >LAT</button>
+          <button class="btnf" >S</button>
+        </div>
+
+        </div>
+
+
+        <div class="movie" id="apocalypse now">
+
+          <div class="movie-image"> 
+            <img  src="css/images/m5.jpg"  alt="WE ARE WHO ARE" /> 
+          <button class="btnx" onclick="fs('pauvi5','myModal5','img5',5)">T</button>
+          </div>
+
+          <div id="myModal5" class="modal">
+             <span class="close">&times;</span>
+               <video  id="pauvi5" class="modal-m2"  controls>
+                 <source  src="css/images/APOCALYPSE-NOW -T.mp4" id="img5" >
+               </video>
+        </div>
+        
+        <div class="foridi">
+          <button class="btnf" >ESP</button>
+          <button class="btnf" >ENG</button>
+          <button class="btnf" >LAT</button>
+          <button class="btnf" >S</button>
+        </div>
+
+        </div>
+
+
+        <div class="movie" id="the social network">
+
+          
+          <div class="movie-image"> 
+            <img  src="css/images/m6.jpg"  alt="WE ARE WHO ARE" /> 
+          <button class="btnx" onclick="fs('pauvi6','myModal6','img6',6)">T</button>
+          </div>
+
+          <div id="myModal6" class="modal">
+             <span class="close">&times;</span>
+               <video  id="pauvi6" class="modal-m2"  controls>
+                 <source  src="css/images/The-Social-Network-T.mp4" id="img6" >
+               </video>
+        </div>
+        
+        <div class="foridi">
+          <button class="btnf" >ESP</button>
+          <button class="btnf" >ENG</button>
+          <button class="btnf" >LAT</button>
+          <button class="btnf" >S</button>
+        </div>
+
+        </div>
+
+        
+        <div class="movie" id="retrato de una mujer en llamas">
+
+          <div class="movie-image"> 
+            <img  src="css/images/m7.jpg"  alt="WE ARE WHO ARE" /> 
+          <button class="btnx" onclick="fs('pauvi7','myModal7','img7',7)">T</button>
+          </div>
+
+          <div id="myModal7" class="modal">
+             <span class="close">&times;</span>
+               <video  id="pauvi7" class="modal-m2"  controls>
+                 <source  src="css/images/Retrato-de-una-mujer-en-llamas-T.mp4" id="img7" >
+               </video>
+        </div>
+        
+        <div class="foridi">
+          <button class="btnf" >ESP</button>
+          <button class="btnf" >ENG</button>
+          <button class="btnf" >LAT</button>
+          <button class="btnf" >S</button>
+        </div>
+
+        </div>
+
+
+        <div class="movie" id="once upon a time">
+          
+
+
+           <div class="movie-image"> 
+            <img  src="css/images/m8.jpg"  alt="WE ARE WHO ARE" /> 
+          <button class="btnx" onclick="fs('pauvi8','myModal8','img8',8)">T</button>
+          </div>
+
+          <div id="myModal8" class="modal">
+             <span class="close">&times;</span>
+               <video  id="pauvi8" class="modal-m2"  controls>
+                 <source  src="css/images/once-upon-a-time.mp4" id="img8" >
+               </video>
+        </div>
+        
+        <div class="foridi">
+          <button class="btnf" >ESP</button>
+          <button class="btnf" >ENG</button>
+          <button class="btnf" >LAT</button>
+          <button class="btnf" >S</button>
+        </div>
+
+
+      
+        </div>
+
+
+        <div class="movie" id="la balada de buster scruggs">
+
+          <div class="movie-image"> 
+            <img  src="css/images/m9.jpg"  alt="WE ARE WHO ARE" /> 
+          <button class="btnx" onclick="fs('pauvi9','myModal9','img9',9)">T</button>
+          </div>
+
+          <div id="myModal9" class="modal">
+             <span class="close">&times;</span>
+               <video  id="pauvi9" class="modal-m2"  controls>
+                 <source  src="css/images/y2mate.com - La balada de Buster Scruggs (2018) Tráiler Oficial Subtitulado_1080p.mp4" id="img9" >
+               </video>
+        </div>
+        
+        <div class="foridi">
+          <button class="btnf" >ESP</button>
+          <button class="btnf" >ENG</button>
+          <button class="btnf" >LAT</button>
+          <button class="btnf" >S</button>
+        </div>
+
+
+        </div>
+
+
+        <div class="movie" id="lady bird">
+
+          <div class="movie-image"> 
+            <img  src="css/images/m10.jpg"  alt="WE ARE WHO ARE" /> 
+          <button class="btnx" onclick="fs('pauvi10','myModal10','img10',10)">T</button>
+          </div>
+
+          <div id="myModal10" class="modal">
+             <span class="close">&times;</span>
+               <video  id="pauvi10" class="modal-m2"  controls>
+                 <source  src="css/images/y2mate.com - Lady Bird (2018) Primer Tráiler Oficial Subtitulado_1080p.mp4" id="img10" >
+               </video>
+        </div>
+        
+        <div class="foridi">
+          <button class="btnf" >ESP</button>
+          <button class="btnf" >ENG</button>
+          <button class="btnf" >LAT</button>
+          <button class="btnf" >S</button>
+        </div>
+
+        </div>
+
+
+        <div class="movie" id="hereditary">
+
+          <div class="movie-image"> 
+            <img  src="css/images/m11.jpg"  alt="WE ARE WHO ARE" /> 
+          <button class="btnx" onclick="fs('pauvi11','myModal11','img11',11)">T</button>
+          </div>
+
+          <div id="myModal11" class="modal">
+             <span class="close">&times;</span>
+               <video  id="pauvi11" class="modal-m2"  controls>
+                 <source  src="css/images/y2mate.com - Hereditary (2018) Primer Tráiler Oficial Subtitulado_1080p.mp4" id="img11" >
+               </video>
+        </div>
+        
+        <div class="foridi">
+          <button class="btnf" >ESP</button>
+          <button class="btnf" >ENG</button>
+          <button class="btnf" >LAT</button>
+          <button class="btnf" >S</button>
+        </div>
+
+        </div>
+
+
+        <div  class="movie" id="midsommar">
+
+          <div class="movie-image"> 
+            <img  src="css/images/m12.png"  alt="WE ARE WHO ARE" /> 
+          <button class="btnx" onclick="fs('pauvi12','myModal12','img12',12)">T</button>
+          </div>
+
+          <div id="myModal12" class="modal">
+             <span class="close">&times;</span>
+               <video  id="pauvi12" class="modal-m2"  controls>
+                 <source  src="css/images/y2mate.com - Midsommar - Tráiler Oficial (Sub. Español)_1080p.mp4" id="img12" >
+               </video>
+        </div>
+        
+        <div class="foridi">
+          <button class="btnf" >ESP</button>
+          <button class="btnf" >ENG</button>
+          <button class="btnf" >LAT</button>
+          <button class="btnf" >S</button>
+        </div>
+
+        </div>
+
+
+        <div class="movie" id="the fury of a patient man">
+
+          <div class="movie-image"> 
+            <img  src="css/images/m13.jpg"  alt="WE ARE WHO ARE" /> 
+          <button class="btnx" onclick="fs('pauvi13','myModal13','img13',13)">T</button>
+          </div>
+
+          <div id="myModal13" class="modal">
+             <span class="close">&times;</span>
+               <video  id="pauvi13" class="modal-m2"  controls>
+                 <source  src="css/images/y2mate.com - THE FURY OF A PATIENT MAN Trailer _ Festival 2016_1080p.mp4" id="img13" >
+               </video>
+        </div>
+        
+        <div class="foridi">
+          <button class="btnf" >ESP</button>
+          <button class="btnf" >ENG</button>
+          <button class="btnf" >LAT</button>
+          <button class="btnf" >S</button>
+        </div>
+
+        </div>
+
+
+        <div class="movie" id="the arrival">
+
+          <div class="movie-image"> 
+            <img  src="css/images/m14.jpg"  alt="WE ARE WHO ARE" /> 
+          <button class="btnx" onclick="fs('pauvi14','myModal14','img14',14)">T</button>
+          </div>
+
+          <div id="myModal14" class="modal">
+             <span class="close">&times;</span>
+               <video  id="pauvi14" class="modal-m2"  controls>
+                 <source  src="css/images/LA LLEGADA _ Tráiler subtitulado HD.mp4" id="img14" >
+               </video>
+        </div>
+        
+        <div class="foridi">
+          <button class="btnf" >ESP</button>
+          <button class="btnf" >ENG</button>
+          <button class="btnf" >LAT</button>
+          <button class="btnf" >S</button>
+        </div>
+
+        </div>
+
+
+        <div class="movie" id="blade runner 2049">
+
+          <div class="movie-image"> 
+            <img  src="css/images/m15.jpg"  alt="WE ARE WHO ARE" /> 
+          <button class="btnx" onclick="fs('pauvi15','myModal15','img15',15)">T</button>
+          </div>
+
+          <div id="myModal15" class="modal">
+             <span class="close">&times;</span>
+               <video  id="pauvi15" class="modal-m2"  controls>
+                 <source  src="css/images/y2mate.com - BLADE RUNNER 2049 _ Nuevo trailer subtitulado (HD)_1080p.mp4" id="img15" >
+               </video>
+        </div>
+        
+        <div class="foridi">
+          <button class="btnf" >ESP</button>
+          <button class="btnf" >ENG</button>
+          <button class="btnf" >LAT</button>
+          <button class="btnf" >S</button>
+        </div>
+
+        </div>
+
+
+        <div class="movie" id="cria cuervos">
+
+          <div class="movie-image"> 
+            <img  src="css/images/m16.jpg"  alt="WE ARE WHO ARE" /> 
+          <button class="btnx" onclick="fs('pauvi16','myModal16','img16',16)">T</button>
+          </div>
+
+          <div id="myModal16" class="modal">
+             <span class="close">&times;</span>
+               <video  id="pauvi16" class="modal-m2"  controls>
+                 <source  src="css/images/y2mate.com - CRIA CUERVOS (Carlos Saura, 1976) Trailer_360p.mp4" id="img16" >
+               </video>
+        </div>
+        
+        <div class="foridi">
+          <button class="btnf" >ESP</button>
+          <button class="btnf" >ENG</button>
+          <button class="btnf" >LAT</button>
+          <button class="btnf" >S</button>
+        </div>
+
+        </div>
+
+
+        <div class="movie" id="isla de perros">
+
+          <div class="movie-image"> 
+            <img  src="css/images/m17.jpg"  alt="WE ARE WHO ARE" /> 
+          <button class="btnx" onclick="fs('pauvi17','myModal17','img17',17)">T</button>
+          </div>
+
+          <div id="myModal17" class="modal">
+             <span class="close">&times;</span>
+               <video  id="pauvi17" class="modal-m2"  controls>
+                 <source  src="css/images/y2mate.com - Isla de perros (2018) Primer Tráiler Oficial Subtitulado_1080p.mp4" id="img17" >
+               </video>
+        </div>
+        
+        <div class="foridi">
+          <button class="btnf" >ESP</button>
+          <button class="btnf" >ENG</button>
+          <button class="btnf" >LAT</button>
+          <button class="btnf" >S</button>
+        </div>
+
+        </div>
+
+
+        <div class="movie" id="strangers on train">
+
+          <div class="movie-image"> 
+            <img  src="css/images/m18.jpg"  alt="WE ARE WHO ARE" /> 
+          <button class="btnx" onclick="fs('pauvi18','myModal18','img18',18)">T</button>
+          </div>
+
+          <div id="myModal18" class="modal">
+             <span class="close">&times;</span>
+               <video  id="pauvi18" class="modal-m2"  controls>
+                 <source  src="css/images/y2mate.com - Extraños en un Tren (Hitchcock) - Trailer Subtitulado_1080p.mp4" id="img18" >
+               </video>
+        </div>
+        
+        <div class="foridi">
+          <button class="btnf" >ESP</button>
+          <button class="btnf" >ENG</button>
+          <button class="btnf" >LAT</button>
+          <button class="btnf" >S</button>
+        </div>
+
+        </div>
+
+
+        
+      </div>
+
+       <!--termina(INGLESII2020)-->
+
+      
+     
+    </div>
+
+
+    
+    
+  </div>
+  
+
+
+</div>
+
+<!--
+<div class="by">
+  <iframe width="420" height="345" src="https://www.youtube.com/embed/zslamAqw3BQ?autoplay=1&mute=0">
+</iframe>
+</div>
+-->
+
+
+
+
+<!-- END PAGE SOURCE -->
+</body>
+</html>
